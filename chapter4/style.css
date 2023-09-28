@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#piano {
+    background-color: crimson;
+    background-image: url('note_line.png');
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding: 90px 20px 0;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    top: 23px;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+
+#logo>img {
+ height: 30px;
+}
+
+#keys {
+    background-color: aqua;
+    width: 949px;
+    height: 180px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.octave {
+    width: 315px;
+    display: flex;
+}
+
+.white {
+    background-color: white;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    border-radius: 0 0 3px 3px;
+}
+
+.black {
+    position: relative;
+}
+
+.black>.label {
+    position: absolute;
+    color: white;
+    width: 32px;
+    left: -16px;
+    top: 50px;
+}
+
+.black::after {
+    content: "";
+    background-color: #1d1e22;
+    width: 32px;
+    height: 100px;
+    position: absolute;
+    left: -16px;
+    border-radius: 0 0 3px 3px;
+  }
