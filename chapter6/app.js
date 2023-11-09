@@ -122,6 +122,7 @@ for(let i = 0; i < chart_data.length; i++) {
 }
 const mean = sumAge / population;
 document.querySelector('#mean').innerHTML = mean.toFixed(4);
+
   // Calculate the median age
 const mid = Math.ceil(population / 2);
 const sorted = [];
@@ -162,6 +163,6 @@ const variance = sumSquare / population;
 document.querySelector('#var').innerHTML = variance.toFixed(4);
 
   // Calculate the standard deviation
-const sd = variance ** 0.5;
-document.querySelector('#sd').innerHTML = sd.toFixed(4);
+  const sd = variance ** 0.5;
+  document.querySelector('#sd').innerHTML = sd.toFixed(4);
 }
